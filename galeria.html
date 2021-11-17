@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="galeria.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body class="container-fluid" style = "background-color: none;padding-left: 0%;padding-right: 0%;">
+    <div class = "bkground">
+        <div class="row justify-content-center " style = "margin-right: 0px;margin-left: 0px;">
+            <svg class = "col-4" width="600" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="200 100 350 350">
+                <g class = "galeria">
+                    <rect id="svg_143" height="38.72549" width="22.05882" y="299.5098" x="459.31373" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_142" height="119.11765" width="65.68627" y="298.52941" x="407.35294" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_141" height="179.90196" width="124.5098" y="156.37255" x="477.94118" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_140" height="65.19608" width="214.70588" y="235.78431" x="263.23529" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_139" height="90.19608" width="150.98039" y="299.5098" x="150.4902" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_138" height="53.43137" width="187.7451" y="206.37255" x="173.03922" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect stroke="#000" id="svg_136" height="81.37255" width="243.62745" y="125.4902" x="174.01961" stroke-width="0" fill="#A68071"/>
+                    <line id="svg_10" y2="125.92437" x2="418.36134" y1="125.84034" x1="173.36134" stroke="#000" fill="none"/>
+                    <line id="svg_13" y2="206.51261" x2="418.06723" y1="125" x1="418.06723" stroke="#000" fill="none"/>
+                    <line id="svg_14" y2="260.29412" x2="263.36134" y1="260.29412" x1="173.36134" stroke="#000" fill="none"/>
+                    <line id="svg_15" y2="206.51261" x2="360.92437" y1="206.51261" x1="418.06723" stroke="#000" fill="none"/>
+                    <line id="svg_16" y2="298.94958" x2="262.60504" y1="260.29412" x1="263.44538" stroke="#000" fill="none"/>
+                    <line id="svg_17" y2="235.92437" x2="361.36134" y1="206.51261" x1="361.36134" stroke="#000" fill="none"/>
+                    <line id="svg_18" y2="298.10924" x2="150.36134" y1="298.10924" x1="263.44538" stroke="#000" fill="none"/>
+                    <line id="svg_19" y2="235.92437" x2="477.36134" y1="235.92437" x1="361.36134" stroke="#000" fill="none"/>
+                    <line id="svg_20" y2="389.92437" x2="150" y1="298.10924" x1="150" stroke="#000" fill="none"/>
+                    <line id="svg_21" y2="155.92437" x2="477.73109" y1="235.92437" x1="477.73109" stroke="#000" fill="none"/>
+                    <line id="svg_22" y2="389.70588" x2="301.36134" y1="389.92437" x1="150" stroke="#000" fill="none"/>
+                    <line id="svg_23" y2="155.92437" x2="603" y1="155.92437" x1="477.73109" stroke="#000" fill="none"/>
+                    <line id="svg_24" y2="301.92437" x2="301.36134" y1="389.70588" x1="301.36134" stroke="#000" fill="none"/>
+                    <line id="svg_25" y2="336.76471" x2="603.36134" y1="155.92437" x1="602.94118" stroke="#000" fill="none"/>
+                    <line id="svg_26" y2="301.47059" x2="408.36134" y1="301.47059" x1="301.2605" stroke="#000" fill="none"/>
+                    <line id="svg_27" y2="337" x2="473.52941" y1="336.76471" x1="603.78151" stroke="#000" fill="none"/>
+                    <line id="svg_28" y2="417.92437" x2="408" y1="301" x1="408" stroke="#000" fill="none"/>
+                    <line id="svg_29" y2="418.27731" x2="473.36134" y1="335.92437" x1="473.36134" stroke="#000" fill="none"/>
+                    <line id="svg_30" y2="417.43697" x2="473.36134" y1="417.43697" x1="407.98319" stroke="#000" fill="none"/>
+                    <line id="svg_31" y2="260.29412" x2="173.36134" y1="125.84034" x1="173.36134" stroke="#000" fill="none"/>
+                </g>
+            </svg>
+                
+            <div class="col-8 col-lg-6 align-self-center">
+                <header>
+                    <h1 style = "font-size: 40px;">Problema da galeria de arte</h1>
+                </header>
+                <p>
+                    O problema da galeria de arte/museo é um questão clássica de geometria computacional. 
+                    Se originou de um empecilho do mundo real onde se busca resguardar o local com o número mínimo
+                    de guardas, onde o conjunto total permite a visão de toda a galeria. No problema original a galeria é representada
+                    por um polígono simples e os guardas por pontos, porém há formas do problema que usam polígonos convexos, com buracos
+                    e até em 3D, e há também a diferença de onde os guardas podem ser postos como apenas nos vértices, ou arestas, ou em qualquer localidade
+                    dentro da galeria. Um conjunto de pontos S é dito seguro quando estes estão contindos também em qualquer segmento de reta pq, p sendo o guarda
+                    e q um ponto qualquer, sem que esta linha não saia do polígono.<br>
+                    O teorema de Václav Chvátal da um limite superior para o problema do mínimo de guardas,
+                    onde a função chão de (n-3) guardas, com n sendo o número de vértices, é sempre suficiente e as vezes necessária para monitorar a galeria.
+                    
+
+                </p>
+            </div>
+                
+        </div>
+        <div class="row justify-content-center flex-md-row-reverse" style = "margin-right: 0px;margin-left: 0px;">            
+            <svg class = "col-4" width="600" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="200 100 350 350">
+                <g class = "galeria">
+                    <rect id="svg_143" height="38.72549" width="22.05882" y="299.5098" x="459.31373" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_142" height="119.11765" width="65.68627" y="298.52941" x="407.35294" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_141" height="179.90196" width="124.5098" y="156.37255" x="477.94118" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_140" height="65.19608" width="214.70588" y="235.78431" x="263.23529" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_139" height="90.19608" width="150.98039" y="299.5098" x="150.4902" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_138" height="53.43137" width="187.7451" y="206.37255" x="173.03922" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect stroke="#000" id="svg_136" height="81.37255" width="243.62745" y="125.4902" x="174.01961" stroke-width="0" fill="#A68071"/>
+                    <line fill="none" stroke="#000" x1="173.36134" y1="125.84034" x2="418.36134" y2="125.92437" id="svg_10"/>
+                    <line fill="none" stroke="#000" x1="418.06723" y1="125" x2="418.06723" y2="206.51261" id="svg_13"/>
+                    <line fill="none" stroke="#000" x1="173.36134" y1="260.29412" x2="263.36134" y2="260.29412" id="svg_14"/>
+                    <line fill="none" stroke="#000" x1="418.06723" y1="206.51261" x2="360.92437" y2="206.51261" id="svg_15"/>
+                    <line fill="none" stroke="#000" x1="263.44538" y1="260.29412" x2="262.60504" y2="298.94958" id="svg_16"/>
+                    <line fill="none" stroke="#000" x1="361.36134" y1="206.51261" x2="361.36134" y2="235.92437" id="svg_17"/>
+                    <line fill="none" stroke="#000" x1="263.44538" y1="299" x2="150.36134" y2="299" id="svg_18"/>
+                    <line fill="none" stroke="#000" x1="361.36134" y1="235.92437" x2="477.36134" y2="235.92437" id="svg_19"/>
+                    <line fill="none" stroke="#000" x1="150" y1="299" x2="150" y2="389.92437" id="svg_20"/>
+                    <line fill="none" stroke="#000" x1="477.73109" y1="235.92437" x2="477.73109" y2="155.92437" id="svg_21"/>
+                    <line fill="none" stroke="#000" x1="150" y1="389.92437" x2="301.36134" y2="389.70588" id="svg_22"/>
+                    <line fill="none" stroke="#000" x1="477.73109" y1="155.92437" x2="603" y2="155.92437" id="svg_23"/>
+                    <line fill="none" stroke="#000" x1="301.36134" y1="389.70588" x2="301.36134" y2="301.92437" id="svg_24"/>
+                    <line fill="none" stroke="#000" x1="602.94118" y1="155.92437" x2="603.36134" y2="336.76471" id="svg_25"/>
+                    <line fill="none" stroke="#000" x1="301.2605" y1="301.47059" x2="408.36134" y2="301.47059" id="svg_26"/>
+                    <line fill="none" stroke="#000" x1="603.78151" y1="336.76471" x2="473.52941" y2="337" id="svg_27"/>
+                    <line fill="none" stroke="#000" x1="408" y1="301" x2="408" y2="417.92437" id="svg_28"/>
+                    <line fill="none" stroke="#000" x1="473.36134" y1="335.92437" x2="473.36134" y2="418.27731" id="svg_29"/>
+                    <line fill="none" stroke="#000" x1="407.98319" y1="417.43697" x2="473.36134" y2="417.43697" id="svg_30"/>
+                    <line fill="none" stroke="#000" x1="173.36134" y1="125.84034" x2="173.36134" y2="260.29412" id="svg_31"/>
+                </g>
+            
+                <g class = "linhas_de_triangularizacao">
+                    <line class = "triangularizacao" fill="none" stroke="#000" x1="150.42017" y1="389.91597" x2="263" y2="299" id="svg_55"/>
+                    <line class = "triangularizacao" fill="none" stroke="#000" x1="152.10084" y1="389.91597" x2="301" y2="302" id="svg_56"/>
+                    <line class = "triangularizacao" fill="none" stroke="#000" x1="263" y1="299" x2="301" y2="301.68067" id="svg_57"/>
+                    <line class = "triangularizacao" fill="none" stroke="#000" x1="173" y1="126" x2="263" y2="259.66387" id="svg_58"/>
+                    <line class = "triangularizacao" fill="none" stroke="#000" x1="173" y1="126" x2="362.18487" y2="206.72269" id="svg_59"/>
+                    <line class = "triangularizacao" fill="none" stroke="#000" x1="263.02521" y1="260" x2="361.34454" y2="207" id="svg_60"/>
+                    <line class = "triangularizacao" fill="none" stroke="#000" x1="263" y1="260" x2="361.34454" y2="236.13445" id="svg_61"/>
+                    <line class = "triangularizacao" fill="none" stroke="#000" x1="263" y1="299" x2="361.34454" y2="236.13445" id="svg_62"/>
+                    <line class = "triangularizacao" fill="none" stroke="#000" x1="301" y1="302" x2="361.34454" y2="236.13445" id="svg_63"/>
+                    <line class = "triangularizacao" fill="none" stroke="#000" x1="362" y1="236.13445" x2="407.56303" y2="301" id="svg_64"/>
+                    <line class = "triangularizacao" fill="none" stroke="#000" x1="473.10924" y1="417.64706" x2="407.56303" y2="301" id="svg_66"/>
+                    <line class = "triangularizacao" fill="none" stroke="#000" x1="477.31092" y1="236.13445" x2="408" y2="301" id="svg_67"/>
+                    <line class = "triangularizacao" fill="none" stroke="#000" x1="603.36134" y1="156.30252" x2="478" y2="236.13445" id="svg_68"/>
+                    <line class = "triangularizacao" fill="none" stroke="#000" x1="603.36134" y1="156" x2="473.10924" y2="336.97479" id="svg_70"/>
+                    <line class = "triangularizacao" fill="none" stroke="#000" x1="478.15126" y1="236.13445" x2="473.94958" y2="336.97479" id="svg_72"/>
+                    <line class = "triangularizacao" fill="none" stroke="#000" x1="408" y1="301" x2="473.94958" y2="337.81513" id="svg_74"/>
+                    <line class = "triangularizacao" fill="none" stroke="#000" x1="418" y1="126" x2="361" y2="206" id="svg_75"/>
+                </g>
+            
+            </svg>
+
+            <div class="col-8 col-lg-6 align-self-center">
+                <header>
+                    <h1 style = "font-size: 40px;">Triangularizando</h1>
+                </header>
+                <p>
+                    Em geometria computacional a triangulação de um polígono é a decomposição de uma área poligonal em um
+                    conjunto de triângulos, sem que estes se intersectem. A complexidade e a quantidade de triângulos depende 
+                    do polígono, mas para polígonos simples a triangularização pode ser tomada com (n-2) triângulos.<br>
+                    Figura do exemplo: 20 vértices -> 18 triângulos<br>
+                    OBS: Em tese, de acordo com Euler (complementando Catalan), há (1/(n-1))C_{2n-4, n-2} formas diferentes de se triângularizar um polígono, porém a formas/métodos
+                    se de achar a melhor forma de se decompor a figura.
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center" style = "margin-right: 0px;margin-left: 0px;">
+            <svg class = "col-4" width="600" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="200 100 350 350">
+                <g class = "galeria">
+                    <rect id="svg_143" height="38.72549" width="22.05882" y="299.5098" x="459.31373" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_142" height="119.11765" width="65.68627" y="298.52941" x="407.35294" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_141" height="179.90196" width="124.5098" y="156.37255" x="477.94118" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_140" height="65.19608" width="214.70588" y="235.78431" x="263.23529" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_139" height="90.19608" width="150.98039" y="299.5098" x="150.4902" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_138" height="53.43137" width="187.7451" y="206.37255" x="173.03922" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect stroke="#000" id="svg_136" height="81.37255" width="243.62745" y="125.4902" x="174.01961" stroke-width="0" fill="#A68071"/>
+                    <line fill="none" stroke="#000" x1="173.36134" y1="125.84034" x2="418.36134" y2="125.92437" id="svg_10"/>
+                    <line fill="none" stroke="#000" x1="418.06723" y1="125" x2="418.06723" y2="206.51261" id="svg_13"/>
+                    <line fill="none" stroke="#000" x1="173.36134" y1="260.29412" x2="263.36134" y2="260.29412" id="svg_14"/>
+                    <line fill="none" stroke="#000" x1="418.06723" y1="206.51261" x2="360.92437" y2="206.51261" id="svg_15"/>
+                    <line fill="none" stroke="#000" x1="263.44538" y1="260.29412" x2="262.60504" y2="298.94958" id="svg_16"/>
+                    <line fill="none" stroke="#000" x1="361.36134" y1="206.51261" x2="361.36134" y2="235.92437" id="svg_17"/>
+                    <line fill="none" stroke="#000" x1="263.44538" y1="299" x2="150.36134" y2="299" id="svg_18"/>
+                    <line fill="none" stroke="#000" x1="361.36134" y1="235.92437" x2="477.36134" y2="235.92437" id="svg_19"/>
+                    <line fill="none" stroke="#000" x1="150" y1="299" x2="150" y2="389.92437" id="svg_20"/>
+                    <line fill="none" stroke="#000" x1="477.73109" y1="235.92437" x2="477.73109" y2="155.92437" id="svg_21"/>
+                    <line fill="none" stroke="#000" x1="150" y1="389.92437" x2="301.36134" y2="389.70588" id="svg_22"/>
+                    <line fill="none" stroke="#000" x1="477.73109" y1="155.92437" x2="603" y2="155.92437" id="svg_23"/>
+                    <line fill="none" stroke="#000" x1="301.36134" y1="389.70588" x2="301.36134" y2="301.92437" id="svg_24"/>
+                    <line fill="none" stroke="#000" x1="602.94118" y1="155.92437" x2="603.36134" y2="336.76471" id="svg_25"/>
+                    <line fill="none" stroke="#000" x1="301.2605" y1="301.47059" x2="408.36134" y2="301.47059" id="svg_26"/>
+                    <line fill="none" stroke="#000" x1="603.78151" y1="336.76471" x2="473.52941" y2="337" id="svg_27"/>
+                    <line fill="none" stroke="#000" x1="408" y1="301" x2="408" y2="417.92437" id="svg_28"/>
+                    <line fill="none" stroke="#000" x1="473.36134" y1="335.92437" x2="473.36134" y2="418.27731" id="svg_29"/>
+                    <line fill="none" stroke="#000" x1="407.98319" y1="417.43697" x2="473.36134" y2="417.43697" id="svg_30"/>
+                    <line fill="none" stroke="#000" x1="173.36134" y1="125.84034" x2="173.36134" y2="260.29412" id="svg_31"/>
+                </g>
+    
+                <g class = "linhas_de_triangularizacao">
+                    <line fill="none" stroke="#000" x1="150.42017" y1="389.91597" x2="263" y2="299" id="svg_55"/>
+                    <line fill="none" stroke="#000" x1="152.10084" y1="389.91597" x2="301" y2="302" id="svg_56"/>
+                    <line fill="none" stroke="#000" x1="263" y1="299" x2="301" y2="301.68067" id="svg_57"/>
+                    <line fill="none" stroke="#000" x1="173" y1="126" x2="263" y2="259.66387" id="svg_58"/>
+                    <line fill="none" stroke="#000" x1="173" y1="126" x2="362.18487" y2="206.72269" id="svg_59"/>
+                    <line fill="none" stroke="#000" x1="263.02521" y1="260" x2="361.34454" y2="207" id="svg_60"/>
+                    <line fill="none" stroke="#000" x1="263" y1="260" x2="361.34454" y2="236.13445" id="svg_61"/>
+                    <line fill="none" stroke="#000" x1="263" y1="299" x2="361.34454" y2="236.13445" id="svg_62"/>
+                    <line fill="none" stroke="#000" x1="301" y1="302" x2="361.34454" y2="236.13445" id="svg_63"/>
+                    <line fill="none" stroke="#000" x1="362" y1="236.13445" x2="407.56303" y2="301" id="svg_64"/>
+                    <line fill="none" stroke="#000" x1="473.10924" y1="417.64706" x2="407.56303" y2="301" id="svg_66"/>
+                    <line fill="none" stroke="#000" x1="477.31092" y1="236.13445" x2="408" y2="301" id="svg_67"/>
+                    <line fill="none" stroke="#000" x1="603.36134" y1="156.30252" x2="478" y2="236.13445" id="svg_68"/>
+                    <line fill="none" stroke="#000" x1="603.36134" y1="156" x2="473.10924" y2="336.97479" id="svg_70"/>
+                    <line fill="none" stroke="#000" x1="478.15126" y1="236.13445" x2="473.94958" y2="336.97479" id="svg_72"/>
+                    <line fill="none" stroke="#000" x1="408" y1="301" x2="473.94958" y2="337.81513" id="svg_74"/>
+                    <line fill="none" stroke="#000" x1="418" y1="126" x2="361" y2="206" id="svg_75"/>
+                </g>
+    
+                <g class = "circulos_nos_vertices">
+                    <ellipse class = "circulo" fill="none" stroke="#000" cx="408" cy="418" id="svg_38" rx="6" ry="6"/>
+                    <ellipse class = "circulo" fill="none" stroke="#000" cx="418" cy="207" id="svg_41" rx="6" ry="6"/>
+                    <ellipse class = "circulo" fill="none" stroke="#000" cx="263" cy="299" id="svg_46" rx="6" ry="6"/>
+                    <ellipse class = "circulo" fill="none" stroke="#000" cx="173" cy="126" id="svg_44" rx="6" ry="6"/>
+                    <ellipse class = "circulo" fill="none" stroke="#000" cx="173" cy="260" id="svg_45" rx="6" ry="6"/>
+                    <ellipse class = "circulo" fill="none" stroke="#000" cx="150" cy="298" id="svg_50" rx="6" ry="6"/>
+                    <ellipse class = "circulo" fill="none" stroke="#000" cx="150" cy="390" id="svg_49" rx="6" ry="6"/>
+                    <ellipse class = "circulo" fill="none" stroke="#000" cx="418" cy="125" id="svg_43" rx="6" ry="6"/>
+                    <ellipse class = "circulo" fill="none" stroke="#000" cx="361" cy="207" id="svg_40" rx="6" ry="6"/>
+                    <ellipse class = "circulo" fill="none" stroke="#000" cx="263" cy="260" id="svg_47" rx="6" ry="6"/>
+                    <ellipse class = "circulo" fill="none" stroke="#000" cx="361" cy="236" id="svg_39" rx="6" ry="6"/>
+                    <ellipse class = "circulo" fill="none" stroke="#000" cx="301" cy="390" id="svg_48" rx="6" ry="6"/>
+                    <ellipse class = "circulo" fill="none" stroke="#000" cx="301" cy="302" id="svg_53" rx="6" ry="6"/>
+                    <ellipse class = "circulo" fill="none" stroke="#000" cx="408" cy="302" id="svg_42" rx="6" ry="6"/>
+                    <ellipse class = "circulo" fill="none" stroke="#000" cx="478" cy="156" id="svg_51" rx="6" ry="6"/>
+                    <ellipse class = "circulo" fill="none" stroke="#000" cx="478" cy="236" id="svg_52" rx="6" ry="6"/>
+                    <ellipse class = "circulo" fill="none" stroke="#000" cx="603" cy="156" id="svg_34" rx="6" ry="6"/>
+                    <ellipse class = "circulo" fill="none" stroke="#000" cx="604" cy="337" id="svg_35" rx="6" ry="6"/>
+                    <ellipse class = "circulo" fill="none" stroke="#000" cx="474" cy="337" id="svg_36" rx="6" ry="6"/>
+                    <ellipse class = "circulo" fill="none" stroke="#000" cx="473" cy="417" id="svg_37" rx="6" ry="6"/>
+                </g>
+                
+            </svg>
+
+            <div class="col-8 col-lg-6 align-self-center">
+                <header>
+                    <h1 style = "font-size: 40px;">Colorindo</h1>
+                </header>
+                <p>
+                    Agora que o polígono foi triangularizado deve-se colorir os vértices com diferentes cores (guardas)
+                    para se preencher os vértices.<br>
+                    OBS: A triangularização e o método de "3-coloring" são casos especiais/mais simples de metodologias mais sofisticadas
+                    usadas em teorias de grafos.
+                </p>
+            </div>
+            <div class="row justify-content-center flex-md-row-reverse" style = "margin-right: 0px;margin-left: 0px;">            
+                <svg class = "col-4" width="600" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="200 100 350 350">
+                    <g id = "galeria">
+                        <rect id="svg_143" height="38.72549" width="22.05882" y="299.5098" x="459.31373" stroke-width="0" stroke="#000" fill="#A68071"/>
+                        <rect id="svg_142" height="119.11765" width="65.68627" y="298.52941" x="407.35294" stroke-width="0" stroke="#000" fill="#A68071"/>
+                        <rect id="svg_141" height="179.90196" width="124.5098" y="156.37255" x="477.94118" stroke-width="0" stroke="#000" fill="#A68071"/>
+                        <rect id="svg_140" height="65.19608" width="214.70588" y="235.78431" x="263.23529" stroke-width="0" stroke="#000" fill="#A68071"/>
+                        <rect id="svg_139" height="90.19608" width="150.98039" y="299.5098" x="150.4902" stroke-width="0" stroke="#000" fill="#A68071"/>
+                        <rect id="svg_138" height="53.43137" width="187.7451" y="206.37255" x="173.03922" stroke-width="0" stroke="#000" fill="#A68071"/>
+                        <rect stroke="#000" id="svg_136" height="81.37255" width="243.62745" y="125.4902" x="174.01961" stroke-width="0" fill="#A68071"/>
+                        <line fill="none" stroke="#000" x1="173.36134" y1="125.84034" x2="418.36134" y2="125.92437" id="svg_10"/>
+                        <line fill="none" stroke="#000" x1="418.06723" y1="125" x2="418.06723" y2="206.51261" id="svg_13"/>
+                        <line fill="none" stroke="#000" x1="173.36134" y1="260.29412" x2="263.36134" y2="260.29412" id="svg_14"/>
+                        <line fill="none" stroke="#000" x1="418.06723" y1="206.51261" x2="360.92437" y2="206.51261" id="svg_15"/>
+                        <line fill="none" stroke="#000" x1="263.44538" y1="260.29412" x2="262.60504" y2="298.94958" id="svg_16"/>
+                        <line fill="none" stroke="#000" x1="361.36134" y1="206.51261" x2="361.36134" y2="235.92437" id="svg_17"/>
+                        <line fill="none" stroke="#000" x1="263.44538" y1="299" x2="150.36134" y2="299" id="svg_18"/>
+                        <line fill="none" stroke="#000" x1="361.36134" y1="235.92437" x2="477.36134" y2="235.92437" id="svg_19"/>
+                        <line fill="none" stroke="#000" x1="150" y1="299" x2="150" y2="389.92437" id="svg_20"/>
+                        <line fill="none" stroke="#000" x1="477.73109" y1="235.92437" x2="477.73109" y2="155.92437" id="svg_21"/>
+                        <line fill="none" stroke="#000" x1="150" y1="389.92437" x2="301.36134" y2="389.70588" id="svg_22"/>
+                        <line fill="none" stroke="#000" x1="477.73109" y1="155.92437" x2="603" y2="155.92437" id="svg_23"/>
+                        <line fill="none" stroke="#000" x1="301.36134" y1="389.70588" x2="301.36134" y2="301.92437" id="svg_24"/>
+                        <line fill="none" stroke="#000" x1="602.94118" y1="155.92437" x2="603.36134" y2="336.76471" id="svg_25"/>
+                        <line fill="none" stroke="#000" x1="301.2605" y1="301.47059" x2="408.36134" y2="301.47059" id="svg_26"/>
+                        <line fill="none" stroke="#000" x1="603.78151" y1="336.76471" x2="473.52941" y2="337" id="svg_27"/>
+                        <line fill="none" stroke="#000" x1="408" y1="301" x2="408" y2="417.92437" id="svg_28"/>
+                        <line fill="none" stroke="#000" x1="473.36134" y1="335.92437" x2="473.36134" y2="418.27731" id="svg_29"/>
+                        <line fill="none" stroke="#000" x1="407.98319" y1="417.43697" x2="473.36134" y2="417.43697" id="svg_30"/>
+                        <line fill="none" stroke="#000" x1="173.36134" y1="125.84034" x2="173.36134" y2="260.29412" id="svg_31"/>
+                    </g>
+        
+                    <g id = "linhas_de_triangularizacao">
+                        <line fill="none" stroke="#000" x1="150.42017" y1="389.91597" x2="263" y2="299" id="svg_55"/>
+                        <line fill="none" stroke="#000" x1="152.10084" y1="389.91597" x2="301" y2="302" id="svg_56"/>
+                        <line fill="none" stroke="#000" x1="263" y1="299" x2="301" y2="301.68067" id="svg_57"/>
+                        <line fill="none" stroke="#000" x1="173" y1="126" x2="263" y2="259.66387" id="svg_58"/>
+                        <line fill="none" stroke="#000" x1="173" y1="126" x2="362.18487" y2="206.72269" id="svg_59"/>
+                        <line fill="none" stroke="#000" x1="263.02521" y1="260" x2="361.34454" y2="207" id="svg_60"/>
+                        <line fill="none" stroke="#000" x1="263" y1="260" x2="361.34454" y2="236.13445" id="svg_61"/>
+                        <line fill="none" stroke="#000" x1="263" y1="299" x2="361.34454" y2="236.13445" id="svg_62"/>
+                        <line fill="none" stroke="#000" x1="301" y1="302" x2="361.34454" y2="236.13445" id="svg_63"/>
+                        <line fill="none" stroke="#000" x1="362" y1="236.13445" x2="407.56303" y2="301" id="svg_64"/>
+                        <line fill="none" stroke="#000" x1="473.10924" y1="417.64706" x2="407.56303" y2="301" id="svg_66"/>
+                        <line fill="none" stroke="#000" x1="477.31092" y1="236.13445" x2="408" y2="301" id="svg_67"/>
+                        <line fill="none" stroke="#000" x1="603.36134" y1="156.30252" x2="478" y2="236.13445" id="svg_68"/>
+                        <line fill="none" stroke="#000" x1="603.36134" y1="156" x2="473.10924" y2="336.97479" id="svg_70"/>
+                        <line fill="none" stroke="#000" x1="478.15126" y1="236.13445" x2="473.94958" y2="336.97479" id="svg_72"/>
+                        <line fill="none" stroke="#000" x1="408" y1="301" x2="473.94958" y2="337.81513" id="svg_74"/>
+                        <line fill="none" stroke="#000" x1="418" y1="126" x2="361" y2="206" id="svg_75"/>
+                    </g>
+                    <g id = "circulos_nos_vertices">
+                        <ellipse class = "circulo_1" fill="none" stroke="#000" cx="173" cy="126" id="svg_44" rx="6" ry="6"/>
+                        <ellipse class = "circulo_2" fill="none" stroke="#000" cx="173" cy="260" id="svg_45" rx="6" ry="6"/>
+                        <ellipse class = "circulo_3" fill="none" stroke="#000" cx="263" cy="260" id="svg_47" rx="6" ry="6"/>
+                        <ellipse class = "circulo_4" fill="none" stroke="#000" cx="361" cy="207" id="svg_40" rx="6" ry="6"/>
+                        <ellipse class = "circulo_5" fill="none" stroke="#000" cx="418" cy="125" id="svg_43" rx="6" ry="6"/>
+                        <ellipse class = "circulo_6" fill="none" stroke="#000" cx="418" cy="207" id="svg_41" rx="6" ry="6"/>
+                        <ellipse class = "circulo_7" fill="none" stroke="#000" cx="361" cy="236" id="svg_39" rx="6" ry="6"/>
+                        <ellipse class = "circulo_8" fill="none" stroke="#000" cx="263" cy="299" id="svg_46" rx="6" ry="6"/>
+                        <ellipse class = "circulo_9" fill="none" stroke="#000" cx="301" cy="302" id="svg_53" rx="6" ry="6"/>
+                        <ellipse class = "circulo_10" fill="none" stroke="#000" cx="150" cy="390" id="svg_49" rx="6" ry="6"/>
+                        <ellipse class = "circulo_11" fill="none" stroke="#000" cx="150" cy="298" id="svg_50" rx="6" ry="6"/>
+                        <ellipse class = "circulo_12" fill="none" stroke="#000" cx="301" cy="390" id="svg_48" rx="6" ry="6"/>
+                        <ellipse class = "circulo_13" fill="none" stroke="#000" cx="408" cy="302" id="svg_42" rx="6" ry="6"/>
+                        <ellipse class = "circulo_14" fill="none" stroke="#000" cx="478" cy="236" id="svg_52" rx="6" ry="6"/>
+                        <ellipse class = "circulo_15" fill="none" stroke="#000" cx="474" cy="337" id="svg_36" rx="6" ry="6"/>
+                        <ellipse class = "circulo_16" fill="none" stroke="#000" cx="603" cy="156" id="svg_34" rx="6" ry="6"/>
+                        <ellipse class = "circulo_17" fill="none" stroke="#000" cx="473" cy="417" id="svg_37" rx="6" ry="6"/>
+                        <ellipse class = "circulo_18" fill="none" stroke="#000" cx="408" cy="418" id="svg_38" rx="6" ry="6"/>
+                        <ellipse class = "circulo_19" fill="none" stroke="#000" cx="478" cy="156" id="svg_51" rx="6" ry="6"/>
+                        <ellipse class = "circulo_20" fill="none" stroke="#000" cx="604" cy="337" id="svg_35" rx="6" ry="6"/>
+                    </g>
+                    <g id = "nodos">
+                        <rect stroke-width="0" id="svg_2" height="5.47945" width="6.39269" y="324.20091" x="183.10503" stroke="#000" fill="#00ffff"/>
+                        <rect stroke-width="0" id="svg_3" height="5.47945" width="6.39269" y="284.47489" x="564.84018" stroke="#000" fill="#00ffff"/>
+                        <rect stroke-width="0" id="svg_4" height="5.47945" width="6.39269" y="241.55251" x="514.15524" stroke="#000" fill="#00ffff"/>
+                        <rect stroke-width="0" id="svg_5" height="5.47945" width="6.39269" y="179.90867" x="511.41553" stroke="#000" fill="#00ffff"/>
+                        <rect stroke-width="0" id="svg_6" height="5.47945" width="6.39269" y="384.93151" x="428.76712" stroke="#000" fill="#00ffff"/>
+                        <rect stroke-width="0" id="svg_7" height="5.47945" width="6.39269" y="349.77169" x="449.7717" stroke="#000" fill="#00ffff"/>
+                        <rect stroke-width="0" id="svg_8" height="5.47945" width="6.39269" y="289.04109" x="454.79453" stroke="#000" fill="#00ffff"/>
+                        <rect stroke-width="0" id="svg_9" height="5.47945" width="6.39269" y="258.44749" x="410.95891" stroke="#000" fill="#00ffff"/>
+                        <rect stroke-width="0" id="svg_11" height="5.47945" width="6.39269" y="275.34247" x="354.33791" stroke="#000" fill="#00ffff"/>
+                        <rect stroke-width="0" id="svg_12" height="5.47945" width="6.39269" y="358.90411" x="263.92694" stroke="#000" fill="#00ffff"/>
+                        <rect stroke-width="0" id="svg_32" height="5.47945" width="6.39269" y="312.78539" x="258.90412" stroke="#000" fill="#00ffff"/>
+                        <rect stroke-width="0" id="svg_33" height="5.47945" width="6.39269" y="282.19178" x="299.08676" stroke="#000" fill="#00ffff"/>
+                        <rect stroke-width="0" id="svg_54" height="5.47945" width="6.39269" y="266.66667" x="284.93151" stroke="#000" fill="#00ffff"/>
+                        <rect stroke-width="0" id="svg_65" height="5.47945" width="6.39269" y="229.68036" x="332.87671" stroke="#000" fill="#00ffff"/>
+                        <rect stroke-width="0" id="svg_69" height="5.47945" width="6.39269" y="186.30137" x="394.52056" stroke="#000" fill="#00ffff"/>
+                        <rect stroke-width="0" id="svg_71" height="5.47945" width="6.39269" y="152.05479" x="320.54794" stroke="#000" fill="#00ffff"/>
+                        <rect stroke-width="0" id="svg_73" height="5.47945" width="6.39269" y="204.10959" x="273.9726" stroke="#000" fill="#00ffff"/>
+                        <rect stroke-width="0" id="svg_76" height="5.47945" width="6.39269" y="213.24201" x="200.91325" stroke="#000" fill="#00ffff"/>
+                    </g>
+        
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+                        refX="0" refY="3.5" orient="auto" fill="#00ffff">
+                          <polygon points="0 0, 10 3.5, 0 7" />
+                        </marker>
+                    </defs>
+        
+                    <g class = "ligacoes_dos_nodos">
+                        <line class = "ligacao" id="svg_77" y2="208" x2="270" y1="215.98174" x1="204.10959" stroke-dasharray="2,2" stroke="#00ffff" fill="none" marker-end="url(#arrowhead)"/>
+                        <line class = "ligacao" id="svg_84" y2="160" x2="320" y1="207.30594" x1="276.71233" stroke-dasharray="2,2" stroke="#00ffff" fill="none" marker-end="url(#arrowhead)"/>
+                        <line class = "ligacao" id="svg_86" y2="185" x2="391" y1="154.79452" x1="323.74429" stroke-dasharray="2,2" stroke="#00ffff" fill="none" marker-end="url(#arrowhead)"/>
+                        <line class = "ligacao" id="svg_88" y2="230" x2="330" y1="207.30594" x1="276.71233" stroke-dasharray="2,2" stroke="#00ffff" fill="none" marker-end="url(#arrowhead)"/>
+                        <line class = "ligacao" id="svg_90" y2="265" x2="293" y1="232.87671" x1="335.61644" stroke-dasharray="2,2" stroke="#00ffff" fill="none" marker-end="url(#arrowhead)"/>
+                        <line class = "ligacao" id="svg_92" y2="280" x2="296" y1="270.31963" x1="287.67123" stroke-dasharray="2,2" stroke="#00ffff" fill="none" marker-end="url(#arrowhead)"/>
+                        <line class = "ligacao" id="svg_94" y2="313" x2="267" y1="285.38813" x1="302.28311" stroke-dasharray="2,2" stroke="#00ffff" fill="none" marker-end="url(#arrowhead)"/>
+                        <line class = "ligacao" id="svg_96" y2="279" x2="350" y1="285.84475" x1="301.82648" stroke-dasharray="2,2" stroke="#00ffff" fill="none" marker-end="url(#arrowhead)"/>
+                        <line class = "ligacao" id="svg_98" y2="326" x2="194" y1="315.98174" x1="262.55708" stroke-dasharray="2,2" stroke="#00ffff" fill="none" marker-end="url(#arrowhead)"/>
+                        <line class = "ligacao" id="svg_100" y2="355" x2="266" y1="315.98174" x1="261.18721" stroke-dasharray="2,2" stroke="#00ffff" fill="none" marker-end="url(#arrowhead)"/>
+                        <line class = "ligacao" id="svg_102" y2="263" x2="408" y1="278.08219" x1="357.07763" stroke-dasharray="2,2" stroke="#00ffff" fill="none" marker-end="url(#arrowhead)"/>
+                        <line class = "ligacao" id="svg_104" y2="288" x2="453" y1="262.10046" x1="412.78539" stroke-dasharray="2,2" stroke="#00ffff" fill="none" marker-end="url(#arrowhead)"/>
+                        <line class = "ligacao" id="svg_106" y2="344" x2="452.96804" y1="292.69406" x1="457.99087" stroke-dasharray="2,2" stroke="#00ffff" fill="none" marker-end="url(#arrowhead)"/>
+                        <line class = "ligacao" id="svg_108" y2="249" x2="510" y1="292.69406" x1="457.53425" stroke-dasharray="2,2" stroke="#00ffff" fill="none" marker-end="url(#arrowhead)"/>
+                        <line class = "ligacao" id="svg_110" y2="190" x2="515" y1="244.74886" x1="518.26484" stroke-dasharray="2,2" stroke="#00ffff" fill="none" marker-end="url(#arrowhead)"/>
+                        <line class = "ligacao" id="svg_111" y2="382" x2="434" y1="352.51142" x1="452.96804" stroke-dasharray="2,2" stroke="#00ffff" fill="none" marker-end="url(#arrowhead)"/>
+                        <line class = "ligacao" id="svg_112" y2="283" x2="563" y1="243.83562" x1="517.80822" stroke-dasharray="2,2" stroke="#00ffff" fill="none" marker-end="url(#arrowhead)"/>
+                    </g>
+                           
+                </svg>
+    
+                <div class="col-8 col-lg-6 align-self-center">
+                    <header>
+                        <h1 style = "font-size: 40px;">Definindo caminhos e colorindo</h1>
+                    </header>
+                    <p>
+                        Para a colorização dos vértices deve-se estabelecer nodos em todos os triângulos, liga-los aos seus vizinhos para que
+                        assim se possa colorir os vértices de cada polígono, seguindo este caminho pré-determinado.<br>
+                        Ao final podemos ter 3 layouts diferentes de guardas nos vértices do polígono.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class = "row justify-content-center" style = "margin-right: 0px;margin-left: 0px;">                       
+            <svg class = "col-4 align-self-center" width="600" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="200 100 350 350">
+                <g id="Layer_1">
+                    <rect id="svg_143" height="38.72549" width="22.05882" y="299.5098" x="459.31373" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_142" height="119.11765" width="65.68627" y="298.52941" x="407.35294" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_141" height="179.90196" width="124.5098" y="156.37255" x="477.94118" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_140" height="65.19608" width="214.70588" y="235.78431" x="263.23529" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_139" height="90.19608" width="150.98039" y="299.5098" x="150.4902" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_138" height="53.43137" width="187.7451" y="206.37255" x="173.03922" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect stroke="#000" id="svg_136" height="81.37255" width="243.62745" y="125.4902" x="174.01961" stroke-width="0" fill="#A68071"/>
+                    <line id="svg_10" y2="125.92437" x2="418.36134" y1="125.84034" x1="173.36134" stroke="#000" fill="none"/>
+                    <line id="svg_13" y2="206.51261" x2="418.06723" y1="125" x1="418.06723" stroke="#000" fill="none"/>
+                    <line id="svg_14" y2="260.29412" x2="263.36134" y1="260.29412" x1="173.36134" stroke="#000" fill="none"/>
+                    <line id="svg_15" y2="206.51261" x2="360.92437" y1="206.51261" x1="418.06723" stroke="#000" fill="none"/>
+                    <line id="svg_16" y2="298.94958" x2="262.60504" y1="260.29412" x1="263.44538" stroke="#000" fill="none"/>
+                    <line id="svg_17" y2="235.92437" x2="361.36134" y1="206.51261" x1="361.36134" stroke="#000" fill="none"/>
+                    <line id="svg_18" y2="298.10924" x2="150.36134" y1="298.10924" x1="263.44538" stroke="#000" fill="none"/>
+                    <line id="svg_19" y2="235.92437" x2="477.36134" y1="235.92437" x1="361.36134" stroke="#000" fill="none"/>
+                    <line id="svg_20" y2="389.92437" x2="150" y1="298.10924" x1="150" stroke="#000" fill="none"/>
+                    <line id="svg_21" y2="155.92437" x2="477.73109" y1="235.92437" x1="477.73109" stroke="#000" fill="none"/>
+                    <line id="svg_22" y2="389.70588" x2="301.36134" y1="389.92437" x1="150" stroke="#000" fill="none"/>
+                    <line id="svg_23" y2="155.92437" x2="603" y1="155.92437" x1="477.73109" stroke="#000" fill="none"/>
+                    <line id="svg_24" y2="301.92437" x2="301.36134" y1="389.70588" x1="301.36134" stroke="#000" fill="none"/>
+                    <line id="svg_25" y2="336.76471" x2="603.36134" y1="155.92437" x1="602.94118" stroke="#000" fill="none"/>
+                    <line id="svg_26" y2="301.47059" x2="408.36134" y1="301.47059" x1="301.2605" stroke="#000" fill="none"/>
+                    <line id="svg_27" y2="337" x2="473.52941" y1="336.76471" x1="603.78151" stroke="#000" fill="none"/>
+                    <line id="svg_28" y2="417.92437" x2="408" y1="301" x1="408" stroke="#000" fill="none"/>
+                    <line id="svg_29" y2="418.27731" x2="473.36134" y1="335.92437" x1="473.36134" stroke="#000" fill="none"/>
+                    <line id="svg_30" y2="417.43697" x2="473.36134" y1="417.43697" x1="407.98319" stroke="#000" fill="none"/>
+                    <line id="svg_31" y2="260.29412" x2="173.36134" y1="125.84034" x1="173.36134" stroke="#000" fill="none"/>
+                    <ellipse fill="#ff0000" stroke="#000" cx="173" cy="260" id="svg_45" rx="6" ry="6"/>
+                    <ellipse fill="#ff0000" stroke="#000" cx="361" cy="207" id="svg_40" rx="6" ry="6"/>
+                    <ellipse fill="#ff0000" stroke="#000" cx="263" cy="299" id="svg_46" rx="6" ry="6"/>
+                    <ellipse fill="#ff0000" stroke="#000" cx="301" cy="390" id="svg_48" rx="6" ry="6"/>
+                    <ellipse fill="#ff0000" stroke="#000" cx="408" cy="302" id="svg_42" rx="6" ry="6"/>
+                    <ellipse fill="#ff0000" stroke="#000" cx="603" cy="156" id="svg_34" rx="6" ry="6"/>
+                </g>
+            </svg>
+        
+                       
+            <svg class = "col-4 align-self-center" width="600" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="200 100 350 350">
+                <g id="Layer_1">
+                    <rect id="svg_143" height="38.72549" width="22.05882" y="299.5098" x="459.31373" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_142" height="119.11765" width="65.68627" y="298.52941" x="407.35294" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_141" height="179.90196" width="124.5098" y="156.37255" x="477.94118" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_140" height="65.19608" width="214.70588" y="235.78431" x="263.23529" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_139" height="90.19608" width="150.98039" y="299.5098" x="150.4902" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_138" height="53.43137" width="187.7451" y="206.37255" x="173.03922" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect stroke="#000" id="svg_136" height="81.37255" width="243.62745" y="125.4902" x="174.01961" stroke-width="0" fill="#A68071"/>
+                    <line id="svg_10" y2="125.92437" x2="418.36134" y1="125.84034" x1="173.36134" stroke="#000" fill="none"/>
+                    <line id="svg_13" y2="206.51261" x2="418.06723" y1="125" x1="418.06723" stroke="#000" fill="none"/>
+                    <line id="svg_14" y2="260.29412" x2="263.36134" y1="260.29412" x1="173.36134" stroke="#000" fill="none"/>
+                    <line id="svg_15" y2="206.51261" x2="360.92437" y1="206.51261" x1="418.06723" stroke="#000" fill="none"/>
+                    <line id="svg_16" y2="298.94958" x2="262.60504" y1="260.29412" x1="263.44538" stroke="#000" fill="none"/>
+                    <line id="svg_17" y2="235.92437" x2="361.36134" y1="206.51261" x1="361.36134" stroke="#000" fill="none"/>
+                    <line id="svg_18" y2="298.10924" x2="150.36134" y1="298.10924" x1="263.44538" stroke="#000" fill="none"/>
+                    <line id="svg_19" y2="235.92437" x2="477.36134" y1="235.92437" x1="361.36134" stroke="#000" fill="none"/>
+                    <line id="svg_20" y2="389.92437" x2="150" y1="298.10924" x1="150" stroke="#000" fill="none"/>
+                    <line id="svg_21" y2="155.92437" x2="477.73109" y1="235.92437" x1="477.73109" stroke="#000" fill="none"/>
+                    <line id="svg_22" y2="389.70588" x2="301.36134" y1="389.92437" x1="150" stroke="#000" fill="none"/>
+                    <line id="svg_23" y2="155.92437" x2="603" y1="155.92437" x1="477.73109" stroke="#000" fill="none"/>
+                    <line id="svg_24" y2="301.92437" x2="301.36134" y1="389.70588" x1="301.36134" stroke="#000" fill="none"/>
+                    <line id="svg_25" y2="336.76471" x2="603.36134" y1="155.92437" x1="602.94118" stroke="#000" fill="none"/>
+                    <line id="svg_26" y2="301.47059" x2="408.36134" y1="301.47059" x1="301.2605" stroke="#000" fill="none"/>
+                    <line id="svg_27" y2="337" x2="473.52941" y1="336.76471" x1="603.78151" stroke="#000" fill="none"/>
+                    <line id="svg_28" y2="417.92437" x2="408" y1="301" x1="408" stroke="#000" fill="none"/>
+                    <line id="svg_29" y2="418.27731" x2="473.36134" y1="335.92437" x1="473.36134" stroke="#000" fill="none"/>
+                    <line id="svg_30" y2="417.43697" x2="473.36134" y1="417.43697" x1="407.98319" stroke="#000" fill="none"/>
+                    <line id="svg_31" y2="260.29412" x2="173.36134" y1="125.84034" x1="173.36134" stroke="#000" fill="none"/>
+                    <ellipse fill="#0000ff" stroke="#000" cx="263" cy="260" id="svg_47" rx="6" ry="6"/>
+                    <ellipse fill="#0000ff" stroke="#000" cx="418" cy="125" id="svg_43" rx="6" ry="6"/>
+                    <ellipse fill="#0000ff" stroke="#000" cx="301" cy="302" id="svg_53" rx="6" ry="6"/>
+                    <ellipse fill="#0000ff" stroke="#000" cx="150" cy="298" id="svg_50" rx="6" ry="6"/>
+                    <ellipse fill="#0000ff" stroke="#000" cx="478" cy="236" id="svg_52" rx="6" ry="6"/>
+                    <ellipse fill="#0000ff" stroke="#000" cx="473" cy="417" id="svg_37" rx="6" ry="6"/>
+                    <ellipse fill="#0000ff" stroke="#000" cx="604" cy="337" id="svg_35" rx="6" ry="6"/>
+                </g>
+            </svg>
+
+            <svg class = "col-4 align-self-center" width="600" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="200 100 350 350">
+                <g id="Layer_1">
+                    <rect id="svg_143" height="38.72549" width="22.05882" y="299.5098" x="459.31373" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_142" height="119.11765" width="65.68627" y="298.52941" x="407.35294" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_141" height="179.90196" width="124.5098" y="156.37255" x="477.94118" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_140" height="65.19608" width="214.70588" y="235.78431" x="263.23529" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_139" height="90.19608" width="150.98039" y="299.5098" x="150.4902" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect id="svg_138" height="53.43137" width="187.7451" y="206.37255" x="173.03922" stroke-width="0" stroke="#000" fill="#A68071"/>
+                    <rect stroke="#000" id="svg_136" height="81.37255" width="243.62745" y="125.4902" x="174.01961" stroke-width="0" fill="#A68071"/>
+                    <line id="svg_10" y2="125.92437" x2="418.36134" y1="125.84034" x1="173.36134" stroke="#000" fill="none"/>
+                    <line id="svg_13" y2="206.51261" x2="418.06723" y1="125" x1="418.06723" stroke="#000" fill="none"/>
+                    <line id="svg_14" y2="260.29412" x2="263.36134" y1="260.29412" x1="173.36134" stroke="#000" fill="none"/>
+                    <line id="svg_15" y2="206.51261" x2="360.92437" y1="206.51261" x1="418.06723" stroke="#000" fill="none"/>
+                    <line id="svg_16" y2="298.94958" x2="262.60504" y1="260.29412" x1="263.44538" stroke="#000" fill="none"/>
+                    <line id="svg_17" y2="235.92437" x2="361.36134" y1="206.51261" x1="361.36134" stroke="#000" fill="none"/>
+                    <line id="svg_18" y2="298.10924" x2="150.36134" y1="298.10924" x1="263.44538" stroke="#000" fill="none"/>
+                    <line id="svg_19" y2="235.92437" x2="477.36134" y1="235.92437" x1="361.36134" stroke="#000" fill="none"/>
+                    <line id="svg_20" y2="389.92437" x2="150" y1="298.10924" x1="150" stroke="#000" fill="none"/>
+                    <line id="svg_21" y2="155.92437" x2="477.73109" y1="235.92437" x1="477.73109" stroke="#000" fill="none"/>
+                    <line id="svg_22" y2="389.70588" x2="301.36134" y1="389.92437" x1="150" stroke="#000" fill="none"/>
+                    <line id="svg_23" y2="155.92437" x2="603" y1="155.92437" x1="477.73109" stroke="#000" fill="none"/>
+                    <line id="svg_24" y2="301.92437" x2="301.36134" y1="389.70588" x1="301.36134" stroke="#000" fill="none"/>
+                    <line id="svg_25" y2="336.76471" x2="603.36134" y1="155.92437" x1="602.94118" stroke="#000" fill="none"/>
+                    <line id="svg_26" y2="301.47059" x2="408.36134" y1="301.47059" x1="301.2605" stroke="#000" fill="none"/>
+                    <line id="svg_27" y2="337" x2="473.52941" y1="336.76471" x1="603.78151" stroke="#000" fill="none"/>
+                    <line id="svg_28" y2="417.92437" x2="408" y1="301" x1="408" stroke="#000" fill="none"/>
+                    <line id="svg_29" y2="418.27731" x2="473.36134" y1="335.92437" x1="473.36134" stroke="#000" fill="none"/>
+                    <line id="svg_30" y2="417.43697" x2="473.36134" y1="417.43697" x1="407.98319" stroke="#000" fill="none"/>
+                    <line id="svg_31" y2="260.29412" x2="173.36134" y1="125.84034" x1="173.36134" stroke="#000" fill="none"/>
+                    <ellipse fill="#6a0dad" stroke="#000" cx="173" cy="126" id="svg_44" rx="6" ry="6"/>
+                    <ellipse fill="#6a0dad" stroke="#000" cx="418" cy="207" id="svg_41" rx="6" ry="6"/>
+                    <ellipse fill="#6a0dad" stroke="#000" cx="361" cy="236" id="svg_39" rx="6" ry="6"/>
+                    <ellipse fill="#6a0dad" stroke="#000" cx="150" cy="390" id="svg_49" rx="6" ry="6"/>
+                    <ellipse fill="#6a0dad" stroke="#000" cx="474" cy="337" id="svg_36" rx="6" ry="6"/>
+                    <ellipse fill="#6a0dad" stroke="#000" cx="408" cy="418" id="svg_38" rx="6" ry="6"/>
+                    <ellipse fill="#6a0dad" stroke="#000" cx="478" cy="156" id="svg_51" rx="6" ry="6"/>
+                </g>
+            </svg>
+             
+        </div>       
+        <div class="row justify-content-center " style = "margin-right: 0px;margin-left: 0px;">
+            <div class="col-12 col-lg-4 align-self-center">
+                <header>
+                    <h1 style = "font-size: 40px;">Experiência e Aprendizado</h1>
+                </header>
+                <p>
+                    Após ja ter tomado conhecimento mais aprofundados com o SVG o novo desafio foi interpretar
+                    e analisar o problema de geometria computacional escolhido. Com isso, me deparei com um problema
+                    que dizem ser um clássico desta área de análise, logo não podia deixar de saber como funcionava. Mas,
+                    após várias pesquisas e observações aprendi que este mesmo problema apresentava várias versões e modos de se
+                    resolver e interpretar. Porém, Por ter focado mais no entendimento do problema e em sua interpretação
+                    não descobri mais muitas coisas relacionadas a SVG. Mas, por fim, na procura e pesquisa pela variedade
+                    de métodos e técnicas consegui entender melhor como alguns problemas são abordados na perspectiva computacional,
+                    como um computador "pensa" para resolve-los, como ranquea-los em sistema de dificuldade/tempo de computação "Big O Notation"
+                    e ideias básicas sobre grafos.
+                </p>
+                <header>
+                    <h1 style = "font-size: 40px;">Referências e Ferramentas</h1>
+                </header>
+                <ul>
+                    <li>Ref: <a href = "https://en.wikipedia.org/wiki/Art_gallery_problem">Art Gallery Problem(Wikipedia)</a></li>
+                    <li>Ref: <a href = "https://en.wikipedia.org/wiki/Polygon_triangulation">Polygon triangulation(Wikipedia)</a></li>
+                    <li>Ref: <a href = "https://en.wikipedia.org/wiki/Catalan_number">Catalan number(Wikipedia)</a></li>
+                    <li>Ref: <a href = "https://www.youtube.com/playlist?list=PLubYOWSl9mItnLTDrmr9D38AJ7EO1PWbN">Youtube</a></li>
+                    <li>Ref: <a href = "https://math.mit.edu/~apost/courses/18.204_2018/Nicole_Chesnokov_paper.pdf">MIT Mathematics</a></li>                    
+                    <li>Fer: Method Draw Vector Editor</li>
+                    <li>Fer: Adobe Color</li>
+                </ul>
+                <h1>
+                    Arte de fundo:<br> "Sinfonia da Primavera", por Nikolaos Gysis
+                </h1>
+            </div>
+        </div>              
+    </div>
+</body>

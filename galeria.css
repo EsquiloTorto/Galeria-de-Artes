@@ -1,0 +1,482 @@
+.bkground {
+    background-image: url("Spring Symphony - Nikolaos Gysis.jpg");
+    background-position: center;
+    background-size: 220%;
+}
+
+p, li {
+    font-size:20px;
+    font-weight: bold;
+    font-family: monaco;
+}
+
+h1 {
+    font-weight: bold;
+    font-family: Papyrus;
+}
+
+.triangularizacao {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 10s linear infinite;
+}
+  
+@keyframes dash {
+    80% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.circulo {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    animation: dash 10s linear infinite;
+}
+  
+@keyframes dash {
+    80% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.circulo_1 {
+    animation: roxo_1 13s ease infinite;
+}
+
+.circulo_2 {
+    animation: vermelho_1 13s ease infinite;
+}
+
+.circulo_3 {
+    animation: azul_1 13s ease infinite;
+}
+
+.circulo_4 {
+    animation: vermelho_2 13s ease infinite;
+}
+
+.circulo_5 {
+    animation: azul_3 13s ease infinite;
+}
+
+.circulo_6 {
+    animation: roxo_4 13s ease infinite;
+}
+
+.circulo_7 {
+    animation: roxo_3 13s ease infinite;
+}
+
+.circulo_8 {
+    animation: vermelho_4 13s ease infinite;
+}
+
+.circulo_9 {
+    animation: azul_5 13s ease infinite;
+}
+
+.circulo_10 {
+    animation: roxo_6 13s ease infinite;
+}
+
+.circulo_11 {
+    animation: azul_7 13s ease infinite;
+}
+
+.circulo_12 {
+    animation: vermelho_7 13s ease infinite;
+}
+
+.circulo_13 {
+    animation: vermelho_6 13s ease infinite;
+}
+
+.circulo_14 {
+    animation: azul_7 13s ease infinite;
+}
+
+.circulo_15 {
+    animation: roxo_7 13s ease infinite;
+}
+
+.circulo_16 {
+    animation: vermelho_9 13s ease infinite;
+}
+
+.circulo_17 {
+    animation: azul_9 13s ease infinite;
+}
+
+.circulo_18 {
+    animation: roxo_10 13s ease infinite;
+}
+
+.circulo_19 {
+    animation: roxo_10 13s ease infinite;
+}
+
+.circulo_20 {
+    animation: azul_10 13s ease infinite;
+}
+
+
+@keyframes roxo_1 {
+    0% {
+        fill: white;
+    }
+    8%{
+        fill:purple;
+    }
+    100%{
+        fill:purple;
+    }
+    
+}
+
+@keyframes vermelho_1 {
+    0% {
+        fill: white;
+    }
+    8%{
+        fill: red;
+    }
+    100%{
+        fill: red;
+    }
+}
+
+@keyframes azul_1 {
+    0% {
+        fill: white;
+    }
+    8%{
+        fill: blue;
+    }
+    100%{
+        fill: blue;
+    }
+}
+
+@keyframes roxo_2 {
+    0% {
+        fill: white;
+    }
+    16%{
+        fill:purple;
+    }
+    100%{
+        fill:purple;
+    }
+}
+
+@keyframes vermelho_2 {
+    0% {
+        fill: white;
+    }
+    16%{
+        fill: red;
+    }
+    100%{
+        fill: red;
+    }
+}
+
+@keyframes azul_2 {
+    0% {
+        fill: white;
+    }
+    16%{
+        fill: blue;
+    }
+    100%{
+        fill: blue;
+    }
+}
+
+@keyframes roxo_3 {
+    0% {
+        fill: white;
+    }
+    24%{
+        fill:purple;
+    }
+    100%{
+        fill:purple;
+    }
+}
+
+@keyframes vermelho_3 {
+    0% {
+        fill: white;
+    }
+    24%{
+        fill: red;
+    }
+    100%{
+        fill: red;
+    }
+}
+
+@keyframes azul_3 {
+    0% {
+        fill: white;
+    }
+    24%{
+        fill: blue;
+    }
+    100%{
+        fill: blue;
+    }
+}
+
+@keyframes roxo_4 {
+    0% {
+        fill: white;
+    }
+    32%{
+        fill:purple;
+    }
+    100%{
+        fill:purple;
+    }
+}
+
+@keyframes vermelho_4 {
+    0% {
+        fill: white;
+    }
+    32%{
+        fill: red;
+    }
+    100%{
+        fill: red;
+    }
+}
+
+@keyframes azul_4 {
+    0% {
+        fill: white;
+    }
+    32%{
+        fill: blue;
+    }
+    100%{
+        fill: blue;
+    }
+}
+
+@keyframes roxo_5 {
+    0% {
+        fill: white;
+    }
+    40%{
+        fill:purple;
+    }
+    100%{
+        fill:purple;
+    }
+}
+
+@keyframes vermelho_5 {
+    0% {
+        fill: white;
+    }
+    40%{
+        fill: red;
+    }
+    100%{
+        fill: red;
+    }
+}
+
+@keyframes azul_5 {
+    0% {
+        fill: white;
+    }
+    40%{
+        fill: blue;
+    }
+    100%{
+        fill: blue;
+    }
+}
+
+@keyframes roxo_6 {
+    0% {
+        fill: white;
+    }
+    48%{
+        fill:purple;
+    }
+    100%{
+        fill:purple;
+    }
+}
+
+@keyframes vermelho_6 {
+    0% {
+        fill: white;
+    }
+    48%{
+        fill: red;
+    }
+    100%{
+        fill: red;
+    }
+}
+
+@keyframes azul_6 {
+    0% {
+        fill: white;
+    }
+    48%{
+        fill: blue;
+    }
+    100%{
+        fill: blue;
+    }
+}
+
+@keyframes roxo_7 {
+    0% {
+        fill: white;
+    }
+    56%{
+        fill:purple;
+    }
+    100%{
+        fill:purple;
+    }
+}
+
+@keyframes vermelho_7 {
+    0% {
+        fill: white;
+    }
+    56%{
+        fill: red;
+    }
+    100%{
+        fill: red;
+    }
+}
+
+@keyframes azul_7 {
+    0% {
+        fill: white;
+    }
+    56%{
+        fill: blue;
+    }
+    100%{
+        fill: blue;
+    }
+}
+
+@keyframes roxo_8 {
+    0% {
+        fill: white;
+    }
+    64%{
+        fill: purple;
+    }
+    100%{
+        fill: purple;
+    }
+}
+
+@keyframes vermelho_8 {
+    0% {
+        fill: white;
+    }
+    64%{
+        fill: red;
+    }
+    100%{
+        fill: red;
+    }
+}
+
+@keyframes azul_8 {
+    0% {
+        fill: white;
+    }
+    64%{
+        fill: blue;
+    }
+    100%{
+        fill: blue;
+    }
+}
+
+@keyframes roxo_9 {
+    0% {
+        fill: white;
+    }
+    72%{
+        fill: purple;
+    }
+    100%{
+        fill: purple;
+    }
+}
+
+@keyframes vermelho_9 {
+    0% {
+        fill: white;
+    }
+    72%{
+        fill: red;
+    }
+    100%{
+        fill: red;
+    }
+}
+
+@keyframes azul_9 {
+    0% {
+        fill: white;
+    }
+    72%{
+        fill: blue;
+    }
+    100%{
+        fill: blue;
+    }
+}
+
+@keyframes roxo_10 {
+    0% {
+        fill: white;
+    }
+    80%{
+        fill: purple;
+    }
+    100%{
+        fill: purple;
+    }
+}
+
+@keyframes vermelho_10 {
+    0% {
+        fill: white;
+    }
+    80%{
+        fill: red;
+    }
+    100%{
+        fill: red;
+    }
+}
+
+@keyframes azul_10 {
+    0% {
+        fill: white;
+    }
+    80%{
+        fill: blue;
+    }
+    100%{
+        fill: blue;
+    }
+}
